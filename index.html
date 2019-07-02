@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="/fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body id="elementbg">
+    <div class="game-ttt">
+        <div id=choose><h3>MEMORY</h3><p>Choose fieldsize:</p>
+            <label class="container">4 cells
+                <input type="radio" name="size" value="g2" id=g2> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">16 cells
+                <input type="radio" name="size" value="g4" id=g4> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">36 cells
+                <input type="radio" name="size" value="g6" id=g6> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">64 cells
+                <input type="radio" name="size" value="g8" id=g8> 
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">100 cells
+                <input type="radio" name="size" value="g10" id=g10> 
+                <span class="checkmark"></span>
+            </label>
+            <input type="button" value="Start game" id=btn-start onclick="loadGame()">
+        </div>
+        <div id=menu>
+            <input type="button" value="Restart game" id=btn-restart>
+            <span id=time></span>
+            <span id=timer>Game ends in <span id="time2"></span> minutes!</span>
+        </div>
+    </div>
+
+    <div id=game>
+        <br>
+        <div class="game-ttt" id="field"></div>
+    </div>
+
+    <script src="main.js"></script>
+<!-- <iframe width="100%" height="0" scrolling="no" frameborder="no" allow="autoplay" params="color=000000&auto_play=true&show_artwork=false" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225143690&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+-->
+
+</body>
+
+</html>
