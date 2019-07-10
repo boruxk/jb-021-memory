@@ -161,10 +161,8 @@ function startGame(a, t) {
 
         //hide
         function hide(){
-            el0 = document.getElementById(tempArr[0]).innerHTML
-            el0 = el0.replace(/unhide/g, "hidden");
-            el1 = document.getElementById(tempArr[1]).innerHTML
-            el1 = el1.replace(/unhide/g, "hidden");
+            document.getElementById(tempArr[0]).innerHTML = document.getElementById(tempArr[0]).innerHTML.replace(/unhide/g, "hidden");
+            document.getElementById(tempArr[1]).innerHTML = document.getElementById(tempArr[1]).innerHTML.replace(/unhide/g, "hidden");
             tempArr = [];
         }
 
